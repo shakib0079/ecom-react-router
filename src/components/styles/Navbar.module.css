@@ -1,0 +1,59 @@
+.navbar {
+  min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.navLogoImg {
+  width: 40px;
+}
+.navMenus {
+  display: flex;
+  list-style: none;
+  min-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navLi {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: #719df2;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  color: #333;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+

@@ -1,0 +1,82 @@
+.cardContainer {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 15px;
+  background: #fbf9ff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.prodImg {
+  width: 250px;
+  height: 180.46px;
+  border-radius: 15px;
+  background-size: cover;
+}
+.cardTitle {
+  display: flex;
+  width: 250px;
+  align-items: flex-start;
+}
+.prodSection {
+  display: flex;
+  width: 175px;
+  height: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.prodTitle {
+  color: #3d3c3c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: stretch;
+}
+.prodPrice {
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.prodRatings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Poppins;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.cardDesc {
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 250px;
+  flex-shrink: 0;
+  height: 72px;
+  overflow: hidden;
+}
+
+.cardBtn {
+  padding: 5px 20px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: #719df2;
+  align-self: stretch;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
