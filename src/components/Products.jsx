@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 
 
+
+
 const styleProd = {
   display: "flex",
   maxWidth: "1200px",
@@ -14,20 +16,24 @@ const styleProd = {
 
 function Products() {
 
+
   const [products, setProducts] = useState([]);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products/')
             .then(res=>res.json())
-            .then(data=>setProducts(data))
+            .then((data) =>{
+              setProducts(data)
+              setLoader(false)
+            })
             .catch(err=> console.log(err))
   },[]);
-
-
+  
 
   return (
     <div style={styleProd}>
-      {products.map(product => <ProductCard key={product.id} {...product} />)}
+      {loader ? <div className="loader">Loading.....</div> : products.map(product => <ProductCard key={product.id} {...product} />)}
     </div>
   )
 }
