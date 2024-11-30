@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-// import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import styles from '../components/styles/ProductCard.module.css';
 
 
-function ProductCard({title, price, description, image, rating}) {
-  // const navigate = useNavigate();
+function ProductCard({id,title, price, description, image, rating}) {
+  const navigate = useNavigate();
 
-  // const productHandler = () => {
-  //   navigate(`/product/${id}`)
-  // }
+  const productHandler = () => {
+    navigate(`/products/${id}`);
+  }
 
   // console.log(Math.round(rating.rate))
   function renderStars(ratings) {
@@ -19,7 +19,7 @@ function ProductCard({title, price, description, image, rating}) {
   }
 
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.cardContainer} onClick={productHandler}>
       <img className={styles.prodImg} src={image} alt="" />
       <div className={styles.cardTitle}>
         <div className={styles.prodSection}>
