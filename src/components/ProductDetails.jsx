@@ -24,6 +24,7 @@ function ProductDetails() {
         return yellowStar.repeat(rate) + whiteStar.repeat(5 - rate);
     }
     return (
+        Object.keys(productData).length === 0 ? <h1>No Product Found</h1> : 
         <div style={{display: "flex",justifyContent: "space-around", alignItems: "center", width:"80%", marginTop: "20px"}}>
             <img width="250px" src={productData.image} alt="" />
             <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>

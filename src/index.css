@@ -13,8 +13,6 @@ a {
 a.active {
   color: red;
 }
-<<<<<<< HEAD
-=======
 
 .loader {
   position: fixed;
@@ -30,4 +28,3 @@ a.active {
   color: #333;
   z-index: 1000; /* Ensure it appears above other elements */
 }
->>>>>>> ef0c4e6f46e984b7b3f56b5e8cbb90021557714b
